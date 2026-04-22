@@ -1,9 +1,18 @@
 "use client";
 
-import {CirclePlus} from "@gravity-ui/icons";
-import {Button, Input, Label, Modal, Surface, TextField,ListBox, Select} from "@heroui/react";
+import { CirclePlus } from "@gravity-ui/icons";
+import {
+  Button,
+  Input,
+  Label,
+  Modal,
+  Surface,
+  TextField,
+  ListBox,
+  Select,
+} from "@heroui/react";
 
-export function AddTask({creatATask}) {
+export function AddTask({ creatATask }) {
   return (
     <Modal>
       <Button variant="secondary">Add a Task</Button>
@@ -15,7 +24,7 @@ export function AddTask({creatATask}) {
               <Modal.Icon className="bg-accent-soft text-accent-soft-foreground">
                 <CirclePlus className="size-5" />
               </Modal.Icon>
-               <Modal.Heading>Add a Task</Modal.Heading>
+              <Modal.Heading>Add a Task</Modal.Heading>
             </Modal.Header>
             <Modal.Body className="p-6">
               <Surface variant="default">
@@ -29,75 +38,75 @@ export function AddTask({creatATask}) {
                     <Input placeholder="Type Your Description" />
                   </TextField>
 
+                  <Select
+                    name="priority"
+                    className="w-[256px]"
+                    placeholder="Select one"
+                  >
+                    <Label>Priority</Label>
+                    <Select.Trigger>
+                      <Select.Value />
+                      <Select.Indicator />
+                    </Select.Trigger>
+                    <Select.Popover>
+                      <ListBox>
+                        <ListBox.Item id="low" textValue="Low">
+                          Low
+                          <ListBox.ItemIndicator />
+                        </ListBox.Item>
+                        <ListBox.Item id="medium" textValue="Medium">
+                          Medium
+                          <ListBox.ItemIndicator />
+                        </ListBox.Item>
+                        <ListBox.Item id="high" textValue="High">
+                          High
+                          <ListBox.ItemIndicator />
+                        </ListBox.Item>
+                      </ListBox>
+                    </Select.Popover>
+                  </Select>
 
-                  <Select name="priority" className="w-[256px]" placeholder="Select one">
-      <Label>Priority</Label>
-      <Select.Trigger>
-        <Select.Value />
-        <Select.Indicator />
-      </Select.Trigger>
-      <Select.Popover>
-        <ListBox>
-          <ListBox.Item id="low" textValue="Low">
-            Low
-            <ListBox.ItemIndicator />
-          </ListBox.Item>
-          <ListBox.Item id="medium" textValue="Medium">
-            Medium
-            <ListBox.ItemIndicator />
-          </ListBox.Item>
-          <ListBox.Item id="high" textValue="High">
-            High
-            <ListBox.ItemIndicator />
-          </ListBox.Item>
-          
-        </ListBox>
-      </Select.Popover>
-    </Select>
+                  <Select
+                    name="status"
+                    className="w-[256px]"
+                    placeholder="Select one"
+                  >
+                    <Label>Status</Label>
+                    <Select.Trigger>
+                      <Select.Value />
+                      <Select.Indicator />
+                    </Select.Trigger>
+                    <Select.Popover>
+                      <ListBox>
+                        <ListBox.Item id="pending" textValue="Pending">
+                          Pending
+                          <ListBox.ItemIndicator />
+                        </ListBox.Item>
+                        <ListBox.Item id="in-progress" textValue="In-Progress">
+                          In-Progress
+                          <ListBox.ItemIndicator />
+                        </ListBox.Item>
+                        <ListBox.Item id="completed" textValue="Completed">
+                          Completed
+                          <ListBox.ItemIndicator />
+                        </ListBox.Item>
+                      </ListBox>
+                    </Select.Popover>
+                  </Select>
 
-
-
-                  <Select name="status" className="w-[256px]" placeholder="Select one">
-      <Label>Status</Label>
-      <Select.Trigger>
-        <Select.Value />
-        <Select.Indicator />
-      </Select.Trigger>
-      <Select.Popover>
-        <ListBox>
-          <ListBox.Item id="pending" textValue="Pending">
-            Pending
-            <ListBox.ItemIndicator />
-          </ListBox.Item>
-          <ListBox.Item id="in-progress" textValue="In-Progress">
-            In-Progress
-            <ListBox.ItemIndicator />
-          </ListBox.Item>
-          <ListBox.Item id="completed" textValue="Completed">
-            Completed
-            <ListBox.ItemIndicator />
-          </ListBox.Item>
-          
-        </ListBox>
-      </Select.Popover>
-    </Select>
-
-
-                  
                   <TextField className="w-full" name="dueDate">
                     <Label>Due Date</Label>
                     <Input placeholder="Your Due Date" />
                   </TextField>
                   <Modal.Footer>
-              <Button slot="close" variant="secondary">
-                Cancel
-              </Button>
-              <Button type="submit">Add a Task</Button>
-            </Modal.Footer>
+                    <Button slot="close" variant="secondary">
+                      Cancel
+                    </Button>
+                    <Button type="submit">Add a Task</Button>
+                  </Modal.Footer>
                 </form>
               </Surface>
             </Modal.Body>
-            
           </Modal.Dialog>
         </Modal.Container>
       </Modal.Backdrop>
