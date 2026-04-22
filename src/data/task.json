@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Learn Next.js Basics",
+    "description": "Study routing, layouts, and server components",
+    "status": "pending",
+    "priority": "high",
+    "dueDate": "2026-04-25",
+    "createdAt": "2026-04-20T10:00:00Z"
+  },
+  {
+    "id": 2,
+    "title": "Build Todo App",
+    "description": "Create a full CRUD todo app with API",
+    "status": "in-progress",
+    "priority": "medium",
+    "dueDate": "2026-04-28",
+    "createdAt": "2026-04-19T08:30:00Z"
+  },
+  {
+    "id": 3,
+    "title": "Practice JavaScript",
+    "description": "Solve 10 problems on arrays and objects",
+    "status": "completed",
+    "priority": "low",
+    "dueDate": "2026-04-22",
+    "createdAt": "2026-04-18T12:15:00Z"
+  },
+  {
+    "id": 4,
+    "title": "Learn API Fetching",
+    "description": "Understand fetch, axios, and caching",
+    "status": "pending",
+    "priority": "high",
+    "dueDate": "2026-04-27",
+    "createdAt": "2026-04-21T09:45:00Z"
+  },
+  {
+    "id": 5,
+    "title": "UI Design Practice",
+    "description": "Create a dashboard UI using Tailwind CSS",
+    "status": "in-progress",
+    "priority": "medium",
+    "dueDate": "2026-04-30",
+    "createdAt": "2026-04-17T14:20:00Z"
+  },
+  {
+    "id": 6,
+    "title": "Learn Database Basics",
+    "description": "Study MongoDB and CRUD operations",
+    "status": "pending",
+    "priority": "high",
+    "dueDate": "2026-05-02",
+    "createdAt": "2026-04-16T11:10:00Z"
+  },
+  {
+    "id": 7,
+    "title": "Fix Bugs in Project",
+    "description": "Debug API errors and UI issues",
+    "status": "in-progress",
+    "priority": "high",
+    "dueDate": "2026-04-23",
+    "createdAt": "2026-04-21T16:00:00Z"
+  },
+  {
+    "id": 8,
+    "title": "Deploy Project",
+    "description": "Deploy Next.js app to Vercel",
+    "status": "pending",
+    "priority": "medium",
+    "dueDate": "2026-05-05",
+    "createdAt": "2026-04-20T18:25:00Z"
+  }
+]
