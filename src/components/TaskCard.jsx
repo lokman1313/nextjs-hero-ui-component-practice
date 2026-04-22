@@ -5,10 +5,10 @@ const TaskCard = ({task}) => {
     const {title,description}=task;
     return (
   
-    <Card className="bg-white text-black">
+    <Card className="">
       <Card.Header>
         <Card.Title>{title}!</Card.Title>
-        <Card.Description>
+        <Card.Description className="text-white">
           {description}
         </Card.Description>
       </Card.Header>
